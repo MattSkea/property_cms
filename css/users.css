@@ -1,0 +1,111 @@
+/**************************************/
+/***********USERS LAYOUT***************/
+/**************************************/
+/***********SECTION LAYOUT*************/
+#section-users{
+    display: none;
+    flex-direction: column;
+}
+
+/**************************************/
+/***********ARTICLE LAYOUT*************/
+/*SETUP THE USERS ARTICLE*/
+.article-users-table:first-child(){
+    margin: 10px 3px;
+}
+/**************************************/
+/************USERS TABLE LAYOUT********/
+/*SETUP USERS TABLE*/
+/**************************************/
+/***************USER ROW LAYOUT********/
+/*setup initial row layout*/
+.aside-user-content{
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;*/
+
+    /*table background colour*/
+    background-color: #37474F;
+}
+
+/*setup row borderes*/
+.aside-user-content div:not(:last-child){
+    /*margin-right: 4px;*/
+    padding: 4px 4px;
+
+    font-size: 100%;
+    border-right: 1px solid #F1F8E9;
+}
+
+
+
+
+/*setup columns*/
+.aside-user-content div{
+    width:12.5%;
+    /*CENTERS ALL THE ITEMS IN THE TABLE*/
+    /*text-align:  center;*/
+}
+/*setup user icon layout*/
+.lbl-user-type,
+.lbl-user-edit,
+.lbl-user-delete,
+.lbl-user-type-txt{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*setup text colour of all the table content*/
+.article-users-table *{
+    color: #FAFAFA;
+}
+/*setup dynamic row backgrounds*/
+.user-row{
+    background-color: #607D8B;
+}
+.user-row:nth-child(odd){
+    background-color: #546E7A;
+}
+.lbl-user-id{
+    display: none;
+}
+
+/*background image styling*/
+#article-users-image{
+    background-color: #00796B;
+}
+
+.lbl-user-type-txt{
+    width: 120px;
+}
+
+/*setup user navigation*/
+#user-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+/*SETUP ADD USER BUTTON*/
+#lblUserAdd{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #42A5F5;
+}
+.user-icon{
+    width: 160px;
+    padding: 4px;
+}
+
+#userAddIcon{
+    width: 40px;
+    display: flex;
+    justify-content: space-around;
+}

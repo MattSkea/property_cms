@@ -1,0 +1,75 @@
+/**************************************/
+/*******PROPERTIY CREATE LAYOUT********/
+/**************************************/
+/***********SECTION LAYOUT*************/
+#section-property-create{
+    display: none;
+    flex-direction: column;
+
+}
+
+/**************************************/
+/***********ARTICLE LAYOUT*************/
+.article-property-create{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    padding: 10px 8px;
+}
+
+/**************************************/
+/*************FORM LAYOUT**************/
+#form-property-create-images{
+
+    width: 80%;
+}
+/*ADD PROPERTY FORM INPUT SYLING*/
+#form-property-create-heading{
+    margin-bottom: 10px;
+}
+/*ADD PROPERTY FORM INPUT STYLING*/
+#form-property-create input:first-child{
+    /*display: none;*/
+}
+/*style the create property image*/
+#article-create-properties-image{
+    background-color: #0097A7;
+}
+/*style the create property image*/
+#article-update-properties-image{
+    display: none;
+    background-color: #AFB42B;
+}
+
+/**************************************/
+/*************FORM IMAGES**************/
+#property-create-image-container{
+/*    background: red;*/
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin:0 0 0 10px;
+    padding: 0 10px;
+    height: 100%;
+
+    background-color: #EEEEEE;
+}
+
+#property-create-image-container .img-preview{
+    /*width: 40%;*/
+    /*border: 0;*/
+    /*height: 10%;*/
+}
+#form-header div{
+        width: 40%;
+
+/*    display: flex;
+    justify-content: space-between;*/
+}
+
+#property-files-hidden{
+      display: none;
+}

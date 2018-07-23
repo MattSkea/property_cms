@@ -1,0 +1,137 @@
+/**************************************/
+/***********PROPERTIES LAYOUT**********/
+/**************************************/
+/***********SECTION LAYOUT*************/
+#section-properties{
+    display: none;
+    flex-direction: column;
+}
+
+/**************************************/
+/***********ARTICLE LAYOUT*************/
+/*SETUP THE PROPERTIES ARTICLE*/
+.article-property-table{
+    background-color: #ECEFF1;
+    padding: 10px 8px;
+}
+.article-property-table:first-child(){
+    margin: 10px 3px;
+}
+/**************************************/
+/*******PROPERTIES TABLE LAYOUT********/
+/*SETUP PROPERTIES TABLE*/
+.aside-property-content{
+    display: flex;
+    justify-content: space-around;
+    /*text-align:  center;*/
+
+    background-color:#607D8B;
+}
+.aside-property-content div{
+    /*CENTERS ALL THE ITEMS IN THE TABLE*/
+    width:200px;
+    align-items: center;
+
+    padding: 4px 4px;
+
+    /*text-align:  center;*/
+}
+/*SETUP ROW SPACING*/
+.aside-property-content .lbl-property-size,
+.aside-property-content .lbl-property-numberOfRooms,
+.aside-property-content .lbl-property-total-rooms,
+.aside-property-content .lbl-property-type-postalCode,
+.aside-property-content .lbl-property-postal-code{
+    width: 100px;
+}
+.aside-property-content div:not(:last-child){
+    /*margin-right: 4px;*/
+    /*height: 100%;*/
+    /*align-items: stretch;*/
+    font-size: 100%;
+    border-right: 1px solid #F1F8E9;
+}
+
+.aside-property-content:nth-child(odd){
+    background-color: #546E7A;
+}
+
+.aside-property-content *, 
+#property-icons *{
+    color: #FAFAFA;
+}
+
+.aside-property-content .fa{
+    display: flex;
+    justify-content: space-around;    
+
+}
+/*BACKGOUND ROW LAYOUT*/
+#property-layout,
+#property-icons{
+    background-color: #37474F;
+}
+
+
+/*SETUP PROPERTIES NAVIGATION ADD PROPERTY*/
+#property-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+#property-layout{
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+
+/*SETUP ADD PROPERTY BUTTON*/
+#lblPropertyAdd, 
+#lblPropertropertiesMaps{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    text-align: center;
+
+    background-color: #303F9F;
+}
+#lblPropertyAdd span:last-child,
+#propertyMapIcon span:last-child{
+    /*ADD MARGIN TO THE LEFT OF THE LAST FA ICON*/
+    margin-left: 6px;
+}
+
+.property-icon{
+    width: 160px;
+    padding: 4px;
+}
+
+#article-properties-image{
+    background-color: #2962FF;
+}
+
+/*HIDE PROPERTY ID CONTAINERS*/
+.lbl-property-id{
+    display: none;
+}
+.lbl-property-editdelete,
+.lbl-property-view{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.lbl-property-editdelete{
+    
+    display: none;
+}
+/*.property-icons,*/
+.lbl-property-editdelete{
+    /*hide the content that unlogged users dont need to see*/
+    display: none;
+}
+/*ADD SEARCH LATER....*/

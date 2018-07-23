@@ -1,0 +1,149 @@
+
+
+/**************************************/
+/**********Fix default layout**********/
+/**************************************/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #212121;
+
+}
+
+body{
+	width: 100vw;
+	height: 100%;
+	overflow-x: hidden;
+
+	z-index: 0;
+
+	background-color: #FAFAFA;
+}
+
+
+/**************************************/
+/***********SECTIION LAYOUT*************/
+.section{
+	position: absolute;
+	top:0;
+	left:40px;
+
+	display: flex;
+
+	width: calc(100% - 40px);
+
+	z-index: 90;
+}
+.section-heading{
+	position: absolute;
+	top: 0px;
+	left: 0;
+
+	width: 100%;
+
+	background-color:rgba(0, 0, 0, 0.5);
+
+	padding-left: 20px;
+}
+.section-heading h1,
+.section-heading h2{
+	color: #FAFAFA;
+}
+
+.section-image img{
+	width: 100vw;
+	/*height: auto;*/
+
+}
+
+/**************************************/
+/***********ARTICLE LAYOUT*************/
+.articles{
+	position: relative;
+	padding: 10px 8px;
+	height: 100%;
+
+	/*background-color: tomato;*/
+}
+/*************************************/
+/********IMAGE LAYOUT*****************/
+.section-image{
+	/*height:100px;*/
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	text-align: center;
+
+	padding-top: 42px;
+	padding-right: 8px;
+	padding-bottom: 8px;
+        height: 98px;
+	/*background-color: tomato;*/
+}
+.section-image div{
+	color: #fff;
+
+}
+.section-image div:not(:last-child){
+	/*space section image icons apart*/
+	margin-right: 8px; 
+}
+
+/**************************************/
+/***********ELEMENT LAYOUT*************/
+#menu-dropdown-edit-user,
+#menu-user-dropdown,
+.property-icons,
+.users-icons,
+#menu-burger,
+.link,
+#lblPropertyAdd, 
+#btn-save-property,
+#section-overlay,
+.form-submit-btn,
+#link-logout,
+#propertyMapSubmit{
+	cursor: pointer;
+}
+
+.border{
+	border: 1px solid #000;
+}
+/**************************************/
+/************BUTTON LAYOUT*************/
+.form-submit-btn,
+#lblPropertyAdd, 
+#lblPropertropertiesMaps,
+#propertyMapSubmit
+{
+	background-color: #42A5F5;
+}
+/**************************************/
+/************HOVER EFFECTS*************/
+#lblPropertropertiesMaps:hover,
+#lblUserAdd:hover,
+.user-row:hover,
+.aside-property-content:hover,
+#lblPropertyAdd:hover,
+.form-submit-btn:hover{
+	background-color: #1E88E5;
+	color: #8BC34A;
+}
+
+
+/*************************************/
+/*******~*****FORM LAYOUT*************/
+.input-error{
+	border:1px solid #dd4b39;
+}
+
+
+
+
+
+
+/*input:focus{
+	outline: none; 
+}*/

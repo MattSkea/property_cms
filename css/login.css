@@ -1,0 +1,53 @@
+/**************************************/
+/***********LOGIN LAYOUT***************/
+/**************************************/
+/***********SECTION LAYOUT*************/
+#section-login{
+	/*setup the section in a column layout*/
+	display: none;
+	flex-direction: column;
+
+	height: 100%;
+}
+/**************************************/
+/***********ARTICLE LAYOUT*************/
+#article-login{
+	/*center the login section*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#form-login{
+	display: flex;
+	justify-content: space-between;
+	height: 300px;
+
+}
+
+#btn-user{
+	margin-top: 20px;
+}
+
+
+/*IMAGE STYLING*/
+#article-login-image{
+	/*background image colour*/
+	background-color: #0277BD;
+}
+/*FOR VALIDATION FORM*/
+.notification-error{
+	/*set a fixed height for the notification container*/
+	/*height:30px;*/
+
+}
+.notification-error{
+	display: none;
+	font-size: 20px;
+	font-weight: 700;
+}
+.notification-error *{
+	color: #dd4b39;
+}
+
+
+

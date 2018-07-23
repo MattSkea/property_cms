@@ -1,0 +1,96 @@
+/**************************************/
+/*******PROPERTIY CREATE LAYOUT********/
+/**************************************/
+#section-property-view{
+    display: none;
+
+    flex-direction: column;
+
+    height: 100%;
+}
+/*SECTION IMAGE*/
+#article-view-property-image{
+    background-color: #4527A0;
+}
+/**************************************/
+/***********ARTICLE LAYOUT*************/
+.article-property-view{
+    display: flex;
+    flex: 2;
+
+    padding: 10px 8px;
+}
+/**************************************/
+/*******PROPERTY DETAIL LAYOUT*********/
+/*SETUP DIV SIZES*/
+#property-details,
+#property-image{
+    width: 50%;
+}
+/*SETUP DETAILS ITEMS SPACING*/
+#aside-property-location{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.property-details-content,
+#propertyMap{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 14px;
+}
+.property-details-content *{
+    color: #fff;
+}
+.property-details-content{
+    padding: 10px 8px;
+    background-color: #673ab7;
+}
+.property-details-content #property-address{
+    font-size: 18px;
+    font-weight: 900;
+}
+.property-details-content #property-zipcity{
+    font-size: 16px;
+    font-weight: 700;
+}
+#propertyMapAddress,
+#propertyMapSubmit{
+    width: 100%;
+    padding: 4px;
+}
+/*ALIGN THE INFORMATION WITH THEIR HEADINGS*/
+#property-info #abode,
+#property-info #auction,
+#property-info #size,
+#property-info #price,
+#property-info #rooms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 600;
+}
+/**************************************/
+/***********PROPERTY IMAGE*************/
+#property-image img{
+    width: 100%;
+    overflow: hidden;
+}
+
+/**************************************/
+/************PROPERTY MAP**************/
+#propertyMap {
+    height: 70%;
+    /*width: 100%;*/
+}
+#propertyMapAddress{
+    color: #000;
+}
+#property-info,
+#property-location-search{
+    display: flex;
+    flex-direction: column;
+}
+#property-location-search{
+    display: none;
+}
